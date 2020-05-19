@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body class="bg-apod">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <!-- brand -->
+      <a class="navbar-brand" href="index.html">NASA APIs</a>
+
+      <!-- toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="index.html">About Project</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="apod.html">APOD</a>
+          </li>
+          <li class="nav-item mx-md-2 active">
+            <a class="nav-link" href="weather.html">Mars Weather</a>
+          </li>
+          <li>
+          <a class="btn btn-outline-primary" href="https://api.nasa.gov/">api.nasa.gov</a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div class="content-wrapper py-sm-5 py-3">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <!-- template -->
+          <div class="col-lg-4 py-sm-5 py-3 weather-card-wrapper d-none">
+            <div class="card text-center">
+              <div class="card-body">
+                <h3 class="weather-date">Date</h3>
+                <h5 class="weather-sol">Sol</h5>
+                <h6>Temperature (C)</h6>
+                <div class="row justify-content-around my-2">
+                  <span class="weather-at-av">avg.</span>
+                  <span class="weather-at-mn">min</span>
+                  <span class="weather-at-mx">max</span>
+                </div>
+                <h6>Wind (m/s)</h6>
+                <div class="row justify-content-around my-2">
+                  <span class="weather-hws-av">avg</span>
+                  <span class="weather-hws-mn">min</span>
+                  <span class="weather-hws-mx">max</span>
+                </div>
+                <h6>Pressure (Pa)</h6>
+                <div class="row justify-content-around my-2">
+                  <span class="weather-pre-av">avg</span>
+                  <span class="weather-pre-mn">min</span>
+                  <span class="weather-pre-mx">max</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- scripts -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- custom sctipts -->
+    <script type="text/javascript" src="apod.js"></script>
+    <script type="text/javascript" src="weather.js"></script>
+
+
+
+  </body>
+</html>

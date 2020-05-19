@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body class="bg-apod">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <!-- brand -->
+      <a class="navbar-brand" href="index.html">NASA APIs</a>
+
+      <!-- toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="index.html">About Project</a>
+          </li>
+          <li class="nav-item mx-md-2 active">
+            <a class="nav-link" href="apod.html">APOD</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="weather.html">Mars Weather</a>
+          </li>
+          <li>
+          <a class="btn btn-outline-primary" href="https://api.nasa.gov/">api.nasa.gov</a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div class="content-wrapper py-sm-5 py-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="card text-center">
+              <img src="" class="card-img-top img-fluid img-apod" alt="image">
+              <div class="card-body">
+                <h1 class="title-apod">title</h1>
+                <p class="explanation-apod">content</p>
+                <h6 class="date-apod">date</h6>
+                <h6 class="copyright-apod">copyright</h6>
+
+                <div class="row justify-content-center mt-2">
+                  <button class="btn btn-primary mx-1 previous" type="button" name="button">previous</button>
+                  <button class="btn btn-primary mx-1 next" type="button" name="button">next</button>
+                  <button class="btn btn-outline-primary mx-1 today" type="button" name="button">today</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- scripts -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- custom sctipts -->
+    <script type="text/javascript" src="apod.js">
+
+    </script>
+
+
+  </body>
+</html>

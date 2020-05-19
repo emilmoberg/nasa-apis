@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body class="bg-apod">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <!-- brand -->
+      <a class="navbar-brand" href="#">NASA APIs</a>
+
+      <!-- toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item mx-md-2 active">
+            <a class="nav-link" href="#">About Project</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="apod.html">APOD</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="weather.html">Mars Weather</a>
+          </li>
+          <a class="btn btn-outline-primary" href="https://api.nasa.gov/">api.nasa.gov</a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div class="content-wrapper py-sm-5 py-3">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-12">
+            <div class="jumbotron text-center">
+              <h1>About Project</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur ha sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br>
+                but really: I tried something new. Used Bootstrap 4 to write as little css as possible. And javascript with the jquery library to do ajax calls.
+
+              </p>
+              <a href="http://emilmoberg.webflow.io" class="btn btn-primary mx-auto">www.emilmoberg.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 py-sm-5 py-3">
+            <div class="card text-md-left text-center">
+              <img src="" class="card-img-top pages-card-img img-apod" id="apod-thumbnail" alt="APOD image">
+              <div class="card-body">
+                <h5>Astronomy Picture of the Day</h5>
+                <p>Some cool pictures from NASA. </p>
+                <a href="apod.html" class="btn btn-primary text-light">Visit Page</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 py-sm-5 py-3">
+            <div class="card text-md-left text-center">
+              <img src="" class="card-img-top pages-card-img img-apod" id="weather-thumbnail" alt="APOD image">
+              <div class="card-body">
+                <h5>Mars Weather</h5>
+                <p>Shows temperature, wind and pressure for the last 7 days. You should probably wear a jacket. And some sunscreen.</p>
+                <a href="weather.html" class="btn btn-primary text-light">Visit Page</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- scripts -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- custom sctipts -->
+    <script type="text/javascript" src="apod.js">
+
+    </script>
+
+
+  </body>
+</html>

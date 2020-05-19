@@ -1,0 +1,15 @@
+body {
+  min-height: 100vh;
+}
+
+
+.bg-apod{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(5px);
+}
+.card-img-top.pages-card-img {
+  height: 15rem;
+  object-fit: cover;
+}
